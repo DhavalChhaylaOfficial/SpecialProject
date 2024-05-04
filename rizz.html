@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Special Project</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link id='favicon' rel="shortcut icon" href="assets/images/faviconhrt.png" type="image/x-png">
+  <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      cursor: url('plush.png'), auto;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background: #fff;
+    }
+
+    .wrapper {
+      animation: scroll 100s linear infinite;
+      background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"),
+        #111111;
+      color: #eee;
+
+      min-width: 360px;
+      width: 100%;
+      perspective: 1000px;
+      perspective-origin: 50% 50%;
+    }
+
+    @keyframes scroll {
+      100% {
+        background-position: 0px -400%;
+      }
+    }
+
+    /* Fallback if the operatring system prefers reduced motion*/
+    @media (prefers-reduced-motion) {
+      .wrapper {
+        animation: scroll 800s linear infinite;
+      }
+    }
+
+    @media (min-width: 670px) {
+      .title {
+        font-size: 5rem;
+      }
+    }
+
+    .threed {
+      /* font-family: "Honk", system-ui; */
+      font-family: "Nabla", system-ui;
+    }
+
+    .graphic {
+      font-family: "Honk", system-ui;
+    }
+
+    .rizztext {
+      font-family: "Single Day", cursive;
+    }
+
+    .typing-demo {
+      width: 30ch;
+      animation: typing 2s steps(30), blink 0.5s step-end infinite alternate;
+      white-space: nowrap;
+      overflow: hidden;
+      /* border-right: 3px solid; */
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <article class="wrapper md:h-screen">
+    <div class="flex items-center justify-center z-10">
+      <div class="typing-demo graphic text-[26px] md:text-5xl lg:text-6xl">
+        HERE are some lines for You QT !
+      </div>
+    </div>
+    <div class="rizztext mt-10 flex flex-col space-y-2 md:space-y-2 items-center justify-center scale-90  md:scale-100">
+      <div class="bg-white p-3 rounded-lg  w-fit shadow-md">
+        <p class="text-gray-600 text-center rizztext blur-sm hover:blur-none">
+          Are you a pencil ✏️ ????🤔
+          Cause you look like an apsara 🧚🏻‍♀️
+        </p>
+      </div>
+      <div class="bg-white p-3 rounded-lg  w-fit shadow-md">
+        <p class="text-gray-600 text-center rizztext blur-sm hover:blur-none">
+          Roses are red and lilies are blue…ill tell u a lil secret tht I already slide in ur heart u dont even have a
+          clue
+        </p>
+      </div>
+      <div class="bg-white p-3 rounded-lg  w-fit shadow-md">
+        <p class="text-gray-600 text-center rizztext blur-sm hover:blur-none">
+          If you were a vegetable, you’d be a ‘cute-cumber.’
+        </p>
+      </div>
+
+      <div class="bg-white p-3 rounded-lg  w-fit shadow-md">
+        <p class="text-gray-600 text-center rizztext blur-sm hover:blur-none">
+          I would never play hide and seek with you because someone like you is impossible to find.
+        </p>
+      </div>
+
+      <div class="bg-white p-3 rounded-lg  w-fit shadow-md">
+        <p class="text-gray-600 text-center rizztext blur-sm hover:blur-none">
+          I was going to say something really sweet about you, but when I saw you, I became speechless.
+        </p>
+      </div>
+
+
+      <div class="bg-white p-3 rounded-lg  w-fit shadow-md">
+        <p class="text-gray-600 text-center rizztext blur-sm hover:blur-none">
+          You know, I believe that honesty is the best policy, so to be perfectly honest, you’re the prettiest girl I’ve
+          ever seen.
+        </p>
+      </div>
+
+      <div class="bg-white p-3 rounded-lg  w-fit shadow-md">
+        <p class="text-gray-600 text-center rizztext blur-sm hover:blur-none">
+          Can you be my private variable? I want to be the only one with access to you.
+        </p>
+      </div>
+
+      <div class="bg-white p-3 rounded-lg  w-fit shadow-md">
+        <p class="text-gray-600 text-center rizztext blur-sm hover:blur-none">
+          Errors are red Databases are blue writing heart queries just for you.
+        </p>
+      </div>
+
+
+    </div>
+
+    <div class="flex items-center justify-center ">
+      <a href="message.html"
+        class="mt-4 bg-gray-900 text-white hover:bg-gray-700 rounded-xl w-fit p-3 bg-opacity-60">Click Me for Next</a>
+    </div>
+  </article>
+  <script defer src="./assets/js/dynamicTitle.js"></script>
+</body>
+
+</html>
